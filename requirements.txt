@@ -1,0 +1,11 @@
+pandas
+numpy
+pyarrow
+requests
+python-dateutil
+pytz
+meteostat
+tqdm
+scikit-learn
+lightgbm
+joblib
