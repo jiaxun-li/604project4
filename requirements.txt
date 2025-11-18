@@ -6,6 +6,7 @@ python-dateutil
 pytz
 meteostat
 tqdm
-scikit-learn
+scikit-learn==1.6.1
 lightgbm
 joblib
+xgboost

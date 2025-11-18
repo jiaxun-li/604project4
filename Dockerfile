@@ -21,11 +21,11 @@ COPY requirements.txt /app/requirements.txt
 RUN pip install --upgrade pip \
  && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-# Copy only your source tree (everything moved under src/)
-COPY src/ /app/src/
+# Copy project contents (includes Makefile, src/, config, etc.)
+COPY . /app
 
-# Default to working in src so relative paths in code keep working
-WORKDIR /app/src
+# Default to repo root so Makefile targets run without extra flags
+WORKDIR /app
 
 # Default command — you can override at `docker run ...`
 CMD ["bash"]

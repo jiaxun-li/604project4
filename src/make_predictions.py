@@ -55,8 +55,8 @@ from predict_peak_window import compute_window_predictions
 BASE_DIR = Path(__file__).resolve().parent
 ZONE_COORDS = BASE_DIR / "config" / "zone_coords.json"
 PREDICTION_LOG = BASE_DIR / "predictions" / "predictions.csv"
-DEFAULT_START="2025-11-19"
-DEFAULT_END="2025-11-28"
+DEFAULT_START="2025-11-20"
+DEFAULT_END="2025-11-29"
 
 warnings.filterwarnings("ignore", message="Could not infer format.*", category=UserWarning)
 

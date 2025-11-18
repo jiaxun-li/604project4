@@ -1,0 +1,2 @@
+# Ignore large intermediate weather download
+noaa_hourly.csv
